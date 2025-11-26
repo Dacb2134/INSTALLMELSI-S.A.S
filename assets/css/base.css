@@ -1,0 +1,208 @@
+/* PALETA */
+:root {
+    --navy: #111827;
+    --blue: #2563eb;
+    --blue-dark: #1d4ed8;
+    --blue-soft: #e0edff;
+    --gray-text: #4b5563;
+    --gray-soft: #f5f7fb;
+    --border-soft: #e5e7eb;
+    --accent: #facc15; /* amarillo tipo advertencia/energia */
+}
+
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background-color: var(--gray-soft);
+    color: #111827;
+    /* leve textura tipo "plano" con degradado */
+    background-image:
+        radial-gradient(circle at top left, rgba(37, 99, 235, 0.07), transparent 55%),
+        radial-gradient(circle at bottom right, rgba(250, 204, 21, 0.05), transparent 55%);
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* CONTENEDOR */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1.5rem 1.25rem 3rem 1.25rem;
+}
+
+/* HEADER + NAV */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0 1.7rem 0;
+}
+
+/* LOGO */
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 48px;
+    display: block;
+}
+
+/* NAV */
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 0.75rem;
+}
+
+.nav-link {
+    display: inline-block;
+    padding: 0.45rem 0.95rem;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--gray-text);
+    border: 1px solid transparent;
+    transition:
+        background-color 0.15s ease,
+        color 0.15s ease,
+        border-color 0.15s ease,
+        box-shadow 0.15s ease,
+        transform 0.15s ease;
+}
+
+.nav-link:hover {
+    background-color: var(--blue-soft);
+    color: var(--blue-dark);
+    border-color: var(--blue);
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.15);
+    transform: translateY(-1px);
+}
+
+.nav-link.active {
+    background-color: var(--blue-dark);
+    color: #ffffff;
+    border-color: var(--blue-dark);
+    box-shadow: 0 6px 14px rgba(37, 99, 235, 0.35);
+}
+
+/* BOTONES GENERALES */
+.btn {
+    padding: 0.8rem 1.4rem;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition:
+        background-color 0.15s ease,
+        color 0.15s ease,
+        box-shadow 0.15s ease,
+        border-color 0.15s ease,
+        transform 0.15s ease;
+}
+
+.btn-primary {
+    background-color: var(--blue-dark);
+    color: #ffffff;
+    box-shadow: 0 8px 18px rgba(37, 99, 235, 0.25);
+}
+
+.btn-primary:hover {
+    background-color: var(--blue);
+    box-shadow: 0 10px 22px rgba(30, 64, 175, 0.30);
+    transform: translateY(-1px);
+}
+
+.btn-outline {
+    background-color: #ffffff;
+    color: var(--blue-dark);
+    border-color: var(--blue-dark);
+}
+
+.btn-outline:hover {
+    background-color: var(--blue-soft);
+    transform: translateY(-1px);
+}
+
+.btn-upload {
+    margin-top: 0.75rem;
+}
+
+/* ENCABEZADO DE PAGINA GENERICO */
+.page-heading {
+    margin-top: 0.75rem;
+    margin-bottom: 1.25rem;
+}
+
+.page-title {
+    font-size: 1.7rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 0.4rem;
+}
+
+.page-subtitle {
+    font-size: 0.95rem;
+    color: var(--gray-text);
+    max-width: 720px;
+}
+
+/* FOOTER */
+.footer {
+    margin-top: 2.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-soft);
+    font-size: 0.85rem;
+    color: #9ca3af;
+    text-align: center;
+}
+
+/* TARJETAS flojitas por defecto */
+.info-card,
+.form-card,
+.result-summary,
+.result-observations,
+.checklist-card,
+.certificate-card {
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.info-card:hover,
+.form-card:hover,
+.result-summary:hover,
+.result-observations:hover,
+.checklist-card:hover,
+.certificate-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 14px 30px rgba(15, 23, 42, 0.12);
+    border-color: rgba(37, 99, 235, 0.2);
+}
+
+/* RESPONSIVE GENERAL */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .nav ul {
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+}

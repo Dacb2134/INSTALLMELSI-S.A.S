@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto | INSTALLMELSI S.A.S.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/contacto.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <img src="assets/img/logo-installmelsi_transparent.png" alt="Logo INSTALLMELSI S.A.S.">
+        </div>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="cliente-subir-plano.html" class="nav-link">Soy propietario</a></li>
+                <li><a href="planes-profesionales.html" class="nav-link">Soy profesional</a></li>
+                <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ENCABEZADO -->
+    <section class="page-heading">
+        <h1 class="page-title">Contacto y solicitud de información</h1>
+        <p class="page-subtitle">
+            Escríbenos si quieres revisar un proyecto, explorar el uso de la plataforma
+            o conocer mejor la propuesta de INSTALLMELSI.
+        </p>
+    </section>
+
+    <!-- LAYOUT -->
+    <main class="contact-layout">
+
+        <!-- Info -->
+        <section class="info-card">
+            <h2 class="section-title">Datos de contacto (simulados)</h2>
+            <ul class="contact-list">
+                <li>
+                    <span class="contact-label">Correo:</span>
+                    <span class="contact-value">contacto@installmelsi.com</span>
+                </li>
+                <li>
+                    <span class="contact-label">Teléfono:</span>
+                    <span class="contact-value">(+593) 99 999 9999</span>
+                </li>
+                <li>
+                    <span class="contact-label">Horario:</span>
+                    <span class="contact-value">Lunes a viernes, 09:00 – 18:00</span>
+                </li>
+                <li>
+                    <span class="contact-label">Ubicación:</span>
+                    <span class="contact-value">Guayaquil, Ecuador</span>
+                </li>
+            </ul>
+
+            <h2 class="section-title">¿Quién puede escribirnos?</h2>
+            <p class="section-text">
+                El prototipo contempla dos tipos de usuario:
+            </p>
+            <ul class="contact-bullets">
+                <li><strong>Propietarios</strong> que quieren revisar planos o instalaciones.</li>
+                <li><strong>Profesionales</strong> interesados en usar la plataforma.</li>
+            </ul>
+
+            <div class="contact-highlight">
+                <p>
+                    La idea es ser un puente entre la familia que busca tranquilidad
+                    y el profesional que quiere trabajar con más respaldo técnico.
+                </p>
+            </div>
+        </section>
+
+        <!-- Formulario -->
+        <section class="form-card">
+            <h2 class="section-title">Formulario de contacto</h2>
+
+            <form class="form">
+                <div class="form-group">
+                    <label for="nombre" class="form-label">Nombre completo</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        class="form-input"
+                        placeholder="Ej: Juan Pérez">
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="form-label">Correo electrónico</label>
+                    <input
+                        type="email"
+                        id="email"
+                        class="form-input"
+                        placeholder="Ej: correo@ejemplo.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="tipo-persona" class="form-label">Soy</label>
+                    <select id="tipo-persona" class="form-input">
+                        <option value="">Selecciona una opción</option>
+                        <option value="propietario">Propietario / cliente final</option>
+                        <option value="profesional">Profesional / empresa eléctrica</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="motivo" class="form-label">Motivo de contacto</label>
+                    <select id="motivo" class="form-input">
+                        <option value="">Selecciona una opción</option>
+                        <option value="revision-plano">Revisión de plano</option>
+                        <option value="certificacion">Certificación de instalación</option>
+                        <option value="alianza">Interés en usar la plataforma</option>
+                        <option value="consulta">Consulta general</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje" class="form-label">Mensaje</label>
+                    <textarea
+                        id="mensaje"
+                        class="form-input form-textarea"
+                        rows="4"
+                        placeholder="Cuéntanos brevemente qué necesitas."></textarea>
+                </div>
+
+                <div class="form-group form-group-inline">
+                    <label class="checkbox-label">
+                        <input type="checkbox">
+                        <span>
+                            Acepto que mis datos sean utilizados para contactarme respecto al servicio.
+                        </span>
+                    </label>
+                </div>
+
+                <div class="form-actions">
+                    <button type="button" class="btn btn-primary">
+                        Enviar mensaje (simulado)
+                    </button>
+                    <p class="form-note">
+                        En una versión real, tu mensaje llegaría al equipo de INSTALLMELSI
+                        para continuar la conversación.
+                    </p>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2025 INSTALLMELSI S.A.S. · Prototipo académico</p>
+    </footer>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Cliente - Subir plano | INSTALLMELSI S.A.S.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/cliente.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="logo">
+            <img src="assets/img/logo-installmelsi_transparent.png" alt="Logo INSTALLMELSI S.A.S.">
+        </div>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="cliente-subir-plano.html" class="nav-link active">Soy propietario</a></li>
+                <li><a href="planes-profesionales.html" class="nav-link">Soy profesional</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ENCABEZADO -->
+    <section class="page-heading">
+        <h1 class="page-title">Paso 1: Sube tu plano eléctrico</h1>
+        <p class="page-subtitle">
+            Empezamos revisando el diseño eléctrico de tu vivienda. Solo necesitamos algunos
+            datos básicos y el archivo del plano.
+        </p>
+    </section>
+
+    <!-- PASOS -->
+    <section class="steps">
+        <div class="step-item step-active">
+            <span class="step-badge">1</span>
+            <span class="step-text">Subir plano</span>
+        </div>
+        <div class="step-item">
+            <span class="step-badge">2</span>
+            <span class="step-text">Resultado</span>
+        </div>
+        <div class="step-item">
+            <span class="step-badge">3</span>
+            <span class="step-text">Checklist instalación</span>
+        </div>
+        <div class="step-item">
+            <span class="step-badge">4</span>
+            <span class="step-text">Certificado</span>
+        </div>
+    </section>
+
+    <!-- CONTENIDO -->
+    <main class="layout-two-columns">
+
+        <!-- Info -->
+        <section class="info-card">
+            <h2 class="section-title">¿Qué revisamos en esta etapa?</h2>
+            <p class="section-text">
+                Usamos tu plano para detectar riesgos antes de que se instale nada.
+            </p>
+            <ul class="section-list">
+                <li>Circuitos y protecciones coherentes con la carga.</li>
+                <li>Distribución general de tomas y puntos de luz.</li>
+                <li>Puntos críticos de seguridad (tablero, tierra, etc.).</li>
+            </ul>
+            <p class="section-text">
+                El objetivo es entregarte un informe sencillo de entender, con
+                recomendaciones concretas para tu instalador.
+            </p>
+        </section>
+
+        <!-- Formulario -->
+        <section class="form-card">
+            <h2 class="section-title">Datos del proyecto</h2>
+
+            <form class="form">
+                <div class="form-group">
+                    <label for="nombre-proyecto" class="form-label">Nombre del proyecto</label>
+                    <input
+                        type="text"
+                        id="nombre-proyecto"
+                        class="form-input"
+                        placeholder="Ej: Vivienda López - Planta baja">
+                </div>
+
+                <div class="form-group">
+                    <label for="ubicacion" class="form-label">Ubicación</label>
+                    <input
+                        type="text"
+                        id="ubicacion"
+                        class="form-input"
+                        placeholder="Ej: Guayaquil, Ecuador">
+                </div>
+
+                <div class="form-group">
+                    <label for="tipo-proyecto" class="form-label">Tipo de proyecto</label>
+                    <select id="tipo-proyecto" class="form-input">
+                        <option value="">Selecciona una opción</option>
+                        <option value="casa">Casa unifamiliar</option>
+                        <option value="departamento">Departamento</option>
+                        <option value="local">Local comercial</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="potencia" class="form-label">Carga o potencia estimada</label>
+                    <input
+                        type="text"
+                        id="potencia"
+                        class="form-input"
+                        placeholder="Ej: 7 kW, 10 kW, etc.">
+                </div>
+
+                <div class="form-group">
+                    <label for="descripcion" class="form-label">Descripción breve</label>
+                    <textarea
+                        id="descripcion"
+                        class="form-input form-textarea"
+                        rows="3"
+                        placeholder="Ej: Vivienda de dos plantas, 3 habitaciones, 2 baños."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class="form-label">Plano eléctrico</label>
+
+                    <div class="upload-zone">
+                        <p class="upload-title">Arrastra tu archivo aquí</p>
+                        <p class="upload-subtitle">o haz clic para seleccionarlo (PDF / imagen)</p>
+                        <button type="button" class="btn btn-outline btn-upload">
+                            Seleccionar archivo
+                        </button>
+                    </div>
+
+                    <p class="form-help">
+                        Formatos: PDF, JPG, PNG. Tamaño máximo referencial: 10 MB.
+                    </p>
+                </div>
+
+                <div class="form-group form-group-inline">
+                    <label class="checkbox-label">
+                        <input type="checkbox">
+                        <span>
+                            Confirmo que la información enviada es correcta y autorizo su revisión técnica.
+                        </span>
+                    </label>
+                </div>
+
+                <div class="form-actions">
+                    <a href="cliente-resultado.html" class="btn btn-primary">
+                        Ver resultado simulado
+                    </a>
+                    <p class="form-note">
+                        En una versión real, aquí se procesaría tu plano y se generaría el informe.
+                    </p>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2025 INSTALLMELSI S.A.S. · Prototipo académico</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
