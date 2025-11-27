@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <title>Subir plano - Propietario | INSTALLMELSI</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/base.css">
-    <link rel="stylesheet" href="/assets/css/cliente.css">
-    <link rel="stylesheet" href="/assets/css/checklist.css">
+    
+    <!-- RUTAS CORREGIDAS: sube a la raíz y entra a assets -->
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/cliente.css">
+    <link rel="stylesheet" href="../assets/css/checklist.css">
 </head>
 <body>
 
@@ -14,14 +16,16 @@
 
     <header class="header">
         <div class="logo">
-            <img src="/assets/img/logo-installmelsi_transparent.png" alt="Logo INSTALLMELSI S.A.S.">
+            <!-- RUTA CORREGIDA -->
+            <img src="../assets/img/logo-installmelsi_transparent.png" alt="Logo INSTALLMELSI S.A.S.">
         </div>
         <nav class="nav">
             <ul>
-                <li><a href="/index.html" class="nav-link">Inicio</a></li>
-                <li><a href="/propietario/cliente-subir-plano.html" class="nav-link active">Soy propietario</a></li>
-                <li><a href="/general/planes-profesionales.html" class="nav-link">Soy profesional</a></li>
-                <li><a href="/general/contacto.html" class="nav-link">Contacto</a></li>
+                <!-- Desde /propietario/ subir a raíz: ../ -->
+                <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                <li><a href="cliente-subir-plano.html" class="nav-link active">Soy propietario</a></li>
+                <li><a href="../general/planes-profesionales.html" class="nav-link">Soy profesional</a></li>
+                <li><a href="../general/contacto.html" class="nav-link">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -79,7 +83,8 @@
                     </div>
 
                     <div class="form-actions">
-                        <a href="/propietario/cliente-dashboard.html" class="btn btn-primary">
+                        <!-- Estamos en /propietario/, el dashboard está en la misma carpeta -->
+                        <a href="cliente-dashboard.html" class="btn btn-primary">
                             Continuar al resumen del proyecto
                         </a>
                         <span class="form-note">Se simula que el proyecto queda registrado en el sistema.</span>

@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <title>Resultados de revisión - Propietario | INSTALLMELSI</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/base.css">
-    <link rel="stylesheet" href="/assets/css/cliente.css">
+
+    <!-- RUTAS CORREGIDAS -->
+    <link rel="stylesheet" href="../assets/css/base.css">
+    <link rel="stylesheet" href="../assets/css/cliente.css">
 </head>
 <body>
 
@@ -13,14 +15,16 @@
 
     <header class="header">
         <div class="logo">
-            <img src="/assets/img/logo-installmelsi_transparent.png" alt="Logo INSTALLMELSI S.A.S.">
+            <!-- RUTA CORREGIDA -->
+            <img src="../assets/img/logo-installmelsi_transparent.png" alt="Logo INSTALLMELSI S.A.S.">
         </div>
         <nav class="nav">
             <ul>
-                <li><a href="/index.html" class="nav-link">Inicio</a></li>
-                <li><a href="/propietario/cliente-subir-plano.html" class="nav-link active">Soy propietario</a></li>
-                <li><a href="/general/planes-profesionales.html" class="nav-link">Soy profesional</a></li>
-                <li><a href="/general/contacto.html" class="nav-link">Contacto</a></li>
+                <!-- Desde carpeta propietario se debe subir con ../ -->
+                <li><a href="../index.html" class="nav-link">Inicio</a></li>
+                <li><a href="cliente-subir-plano.html" class="nav-link active">Soy propietario</a></li>
+                <li><a href="../general/planes-profesionales.html" class="nav-link">Soy profesional</a></li>
+                <li><a href="../general/contacto.html" class="nav-link">Contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -71,10 +75,11 @@
                 </p>
 
                 <div class="form-actions">
-                    <a href="/propietario/cliente-dashboard.html" class="btn btn-outline btn-sm">
+                    <!-- RUTAS CORREGIDAS (misma carpeta propietario/) -->
+                    <a href="cliente-dashboard.html" class="btn btn-outline btn-sm">
                         Volver al dashboard
                     </a>
-                    <a href="/propietario/cliente-certificado.html" class="btn btn-primary btn-sm">
+                    <a href="cliente-certificado.html" class="btn btn-primary btn-sm">
                         Ver ejemplo de certificado
                     </a>
                 </div>
