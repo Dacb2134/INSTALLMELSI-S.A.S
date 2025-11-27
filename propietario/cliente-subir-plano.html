@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Subir plano - Propietario | INSTALLMELSI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/cliente.css">
+    <link rel="stylesheet" href="assets/css/checklist.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header class="header">
+        <div class="logo">
+            <img src="assets/img/logo-installmelsi_transparent.png" alt="Logo INSTALLMELSI S.A.S.">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="cliente-subir-plano.html" class="nav-link active">Soy propietario</a></li>
+                <li><a href="planes-profesionales.html" class="nav-link">Soy profesional</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-main">
+        <section class="page-header-block">
+            <h1 class="page-title">Sube tu plano eléctrico</h1>
+            <p class="page-subtitle">
+                Este es el primer paso para tener una instalación verificada. Cuéntanos de tu proyecto
+                y adjunta el plano que te entregó tu ingeniero.
+            </p>
+        </section>
+
+        <section class="layout-two-cols">
+            <div class="form-card">
+                <h2 class="section-title">Datos del proyecto</h2>
+
+                <form class="form">
+                    <div class="form-group">
+                        <label for="nombrePropietario">Nombre del propietario</label>
+                        <input type="text" id="nombrePropietario" placeholder="Ej. Juan López">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" id="correo" placeholder="ejemplo@correo.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="ubicacion">Ubicación de la vivienda</label>
+                        <input type="text" id="ubicacion" placeholder="Ciudad, sector o referencia">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tipoProyecto">Tipo de proyecto</label>
+                        <select id="tipoProyecto">
+                            <option>Vivienda nueva</option>
+                            <option>Remodelación parcial</option>
+                            <option>Ampliación de vivienda</option>
+                            <option>Local comercial pequeño</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="plano">Plano eléctrico (PDF, JPG o PNG)</label>
+                        <input type="file" id="plano">
+                        <small class="form-help">
+                            En el prototipo no se guarda el archivo, solo simulamos el flujo.
+                        </small>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comentarios">Comentarios o preocupaciones</label>
+                        <textarea id="comentarios" rows="3" placeholder="Ej. Tengo niños pequeños y me preocupa la seguridad de los tomacorrientes."></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <a href="cliente-dashboard.html" class="btn btn-primary">
+                            Continuar al resumen del proyecto
+                        </a>
+                        <span class="form-note">Se simula que el proyecto queda registrado en el sistema.</span>
+                    </div>
+                </form>
+            </div>
+
+            <aside class="info-panel">
+                <h3 class="info-title">¿Qué hará INSTALLMELSI con esta información?</h3>
+                <p>
+                    • Revisar el plano eléctrico con criterios de seguridad.<br>
+                    • Validar que los materiales propuestos sean adecuados.<br>
+                    • Preparar el proyecto para seguimiento en la plataforma.
+                </p>
+                <p class="info-highlight">
+                    Una vez creado el proyecto, podrás ver un dashboard con el estado
+                    de tu instalación y las recomendaciones del ingeniero.
+                </p>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 INSTALLMELSI S.A.S. · Prototipo académico</p>
+    </footer>
+
+</div>
+
+</body>
+</html>

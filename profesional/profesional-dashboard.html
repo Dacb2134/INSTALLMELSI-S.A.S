@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard profesional | INSTALLMELSI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/css/profesionales.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header class="header">
+        <div class="logo">
+            <img src="assets/img/logo-installmelsi_transparent.png" alt="Logo INSTALLMELSI S.A.S.">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="cliente-subir-plano.html" class="nav-link">Soy propietario</a></li>
+                <li><a href="planes-profesionales.html" class="nav-link active">Soy profesional</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-main">
+        <section class="page-header-block">
+            <h1 class="page-title">Dashboard del profesional eléctrico</h1>
+            <p class="page-subtitle">
+                Visualiza los proyectos asignados, su estado y accede al checklist técnico
+                para documentar tu trabajo de forma profesional.
+            </p>
+        </section>
+
+        <section class="pro-dashboard-layout">
+            <div class="pro-dashboard-main card">
+                <h2 class="section-title">Proyectos asignados</h2>
+
+                <div class="pro-projects-grid">
+                    <article class="pro-project-card">
+                        <h3>Vivienda familia López</h3>
+                        <p class="pro-meta">ID: INST-00123 · Guayaquil</p>
+                        <p class="pro-status-label">Estado: En revisión técnica</p>
+                        <a href="profesional-checklist.html" class="btn btn-primary btn-sm">
+                            Abrir checklist
+                        </a>
+                    </article>
+
+                    <article class="pro-project-card">
+                        <h3>Departamento Torres del Río</h3>
+                        <p class="pro-meta">ID: INST-00124 · Samborondón</p>
+                        <p class="pro-status-label">Estado: Instalación en curso</p>
+                        <a href="profesional-checklist.html" class="btn btn-outline btn-sm">
+                            Continuar checklist
+                        </a>
+                    </article>
+
+                    <article class="pro-project-card">
+                        <h3>Local comercial Centro</h3>
+                        <p class="pro-meta">ID: INST-00125 · Centro</p>
+                        <p class="pro-status-label">Estado: En espera de certificación</p>
+                        <button class="btn btn-ghost btn-sm" type="button">
+                            Ver resumen
+                        </button>
+                    </article>
+                </div>
+            </div>
+
+            <aside class="dashboard-side">
+                <div class="side-card">
+                    <h3 class="side-title">Resumen rápido</h3>
+                    <p>Proyectos activos: <strong>3</strong></p>
+                    <p>En instalación: <strong>1</strong></p>
+                    <p>En espera de certificación: <strong>1</strong></p>
+                </div>
+
+                <div class="side-card">
+                    <h3 class="side-title">Beneficio para tu marca</h3>
+                    <p>
+                        Al usar INSTALLMELSI, puedes demostrar con evidencias y
+                        certificados que tus instalaciones siguen buenas prácticas
+                        de seguridad eléctrica.
+                    </p>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 INSTALLMELSI S.A.S. · Prototipo académico</p>
+    </footer>
+
+</div>
+
+</body>
+</html>

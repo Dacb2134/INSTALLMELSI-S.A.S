@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard del proyecto - Propietario | INSTALLMELSI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/cliente.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header class="header">
+        <div class="logo">
+            <img src="assets/img/logo-installmelsi_transparent.png" alt="Logo INSTALLMELSI S.A.S.">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="cliente-subir-plano.html" class="nav-link active">Soy propietario</a></li>
+                <li><a href="planes-profesionales.html" class="nav-link">Soy profesional</a></li>
+                <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-main">
+        <section class="page-header-block">
+            <h1 class="page-title">Dashboard del proyecto eléctrico</h1>
+            <p class="page-subtitle">
+                Aquí puedes ver el estado general de tu instalación, el avance por etapas
+                y el nivel estimado de seguridad según la revisión técnica.
+            </p>
+        </section>
+
+        <section class="dashboard-layout">
+            <div class="dashboard-main">
+                <div class="dashboard-header">
+                    <div>
+                        <h2 class="dashboard-project-name">Vivienda familia López</h2>
+                        <p class="dashboard-project-meta">Proyecto ID: INST-00123 · Tipo: Vivienda nueva</p>
+                    </div>
+                    <div class="dashboard-status-group">
+                        <span class="status-pill status-pill-active">En revisión técnica</span>
+                        <span class="status-pill status-pill-soft">Instalación pendiente</span>
+                        <span class="status-pill status-pill-soft">Certificado pendiente</span>
+                    </div>
+                </div>
+
+                <div class="dashboard-grid">
+                    <article class="dashboard-card">
+                        <h3 class="dashboard-card-title">Nivel de seguridad estimado</h3>
+                        <p class="dashboard-card-subtitle">
+                            Cálculo preliminar basado en el diseño y materiales propuestos.
+                        </p>
+                        <div class="score-wrapper">
+                            <div class="score-number">78%</div>
+                            <div class="score-bar">
+                                <div class="score-bar-fill"></div>
+                            </div>
+                            <p class="score-note">
+                                Podría mejorar corrigiendo 3 observaciones críticas.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="dashboard-card">
+                        <h3 class="dashboard-card-title">Resumen por etapas</h3>
+                        <ul class="steps-list">
+                            <li class="step-item step-done">
+                                <span class="step-dot"></span> Plano recibido y registrado
+                            </li>
+                            <li class="step-item step-active">
+                                <span class="step-dot"></span> Revisión técnica del ingeniero
+                            </li>
+                            <li class="step-item">
+                                <span class="step-dot"></span> Instalación con checklist
+                            </li>
+                            <li class="step-item">
+                                <span class="step-dot"></span> Certificación final
+                            </li>
+                        </ul>
+                        <a href="cliente-checklist.html" class="btn btn-outline btn-sm">
+                            Ver checklist de instalación
+                        </a>
+                    </article>
+
+                    <article class="dashboard-card">
+                        <h3 class="dashboard-card-title">Últimas observaciones</h3>
+                        <ul class="observaciones-list">
+                            <li>
+                                <strong>Tablero principal:</strong> se recomienda ajustar la
+                                capacidad del breaker general.
+                            </li>
+                            <li>
+                                <strong>Puerta de ingreso:</strong> falta un punto de luz exterior
+                                con protección adecuada.
+                            </li>
+                            <li>
+                                <strong>Baños:</strong> revisar la instalación de tomacorrientes
+                                con protección diferencial.
+                            </li>
+                        </ul>
+                        <a href="cliente-resultado.html" class="btn btn-primary btn-sm">
+                            Ver detalle de recomendaciones
+                        </a>
+                    </article>
+                </div>
+            </div>
+
+            <aside class="dashboard-side">
+                <div class="side-card">
+                    <h3 class="side-title">Estado general</h3>
+                    <p class="side-status-label">Progreso del proyecto</p>
+                    <div class="side-progress">
+                        <div class="side-progress-fill"></div>
+                    </div>
+                    <p class="side-progress-text">Etapa 2 de 4 completándose</p>
+                </div>
+
+                <div class="side-card">
+                    <h3 class="side-title">Siguiente paso</h3>
+                    <p>
+                        Esperar la revisión del ingeniero y las recomendaciones finales.
+                        Luego se programará la instalación con checklist.
+                    </p>
+                    <a href="cliente-checklist.html" class="btn btn-outline btn-sm">
+                        Ver cómo será el checklist
+                    </a>
+                </div>
+
+                <div class="side-card">
+                    <h3 class="side-title">Certificado</h3>
+                    <p>
+                        El certificado de seguridad eléctrica se habilitará cuando
+                        todas las etapas estén completadas.
+                    </p>
+                    <a href="cliente-certificado.html" class="btn btn-ghost btn-sm">
+                        Ver ejemplo de certificado
+                    </a>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 INSTALLMELSI S.A.S. · Prototipo académico</p>
+    </footer>
+
+</div>
+
+</body>
+</html>

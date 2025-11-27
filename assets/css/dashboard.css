@@ -1,0 +1,242 @@
+/* =========================
+   DASHBOARDS (CLIENTE / PRO)
+   ========================= */
+
+.dashboard-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.7fr) minmax(0, 1.1fr);
+    gap: 1.4rem;
+    align-items: flex-start;
+}
+
+.dashboard-main {
+    background-color: #ffffff;
+    border-radius: var(--radius-xl);
+    padding: 1.2rem 1.2rem 1.3rem;
+    border: 1px solid var(--border-soft);
+    box-shadow: var(--shadow-soft);
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.dashboard-project-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 0.1rem;
+}
+
+.dashboard-project-meta {
+    font-size: 0.8rem;
+    color: var(--gray-light);
+}
+
+.dashboard-status-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    font-size: 0.78rem;
+}
+
+.status-pill {
+    padding: 0.25rem 0.65rem;
+    border-radius: 999px;
+    border: 1px solid var(--border-soft);
+    background-color: #f9fafb;
+    color: var(--gray-text);
+}
+
+.status-pill-active {
+    border-color: rgba(37, 99, 235, 0.7);
+    background-color: var(--blue-soft-alt);
+    color: var(--blue-dark);
+}
+
+.status-pill-soft {
+    opacity: 0.8;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.9rem;
+}
+
+/* TARJETAS DASHBOARD */
+
+.dashboard-card {
+    background-color: #f9fafb;
+    border-radius: 1rem;
+    padding: 0.9rem 0.9rem;
+    border: 1px solid var(--border-soft);
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.04);
+    font-size: 0.86rem;
+    color: var(--gray-text);
+}
+
+.dashboard-card-title {
+    font-size: 0.98rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 0.2rem;
+}
+
+.dashboard-card-subtitle {
+    font-size: 0.8rem;
+    color: var(--gray-light);
+    margin-bottom: 0.4rem;
+}
+
+/* SCORE */
+
+.score-wrapper {
+    margin-top: 0.25rem;
+}
+
+.score-number {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--blue-dark);
+    margin-bottom: 0.3rem;
+}
+
+.score-bar {
+    width: 100%;
+    height: 8px;
+    border-radius: 999px;
+    background-color: #e5e7eb;
+    overflow: hidden;
+    margin-bottom: 0.25rem;
+}
+
+.score-bar-fill {
+    width: 78%;
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #22c55e, #eab308);
+}
+
+.score-note {
+    font-size: 0.78rem;
+    color: var(--gray-light);
+}
+
+/* LISTAS */
+
+.steps-list {
+    margin: 0.4rem 0 0.6rem 0;
+    font-size: 0.85rem;
+}
+
+.step-item {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 0.25rem;
+    color: var(--gray-text);
+}
+
+.step-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 999px;
+    border: 1px solid var(--border-soft);
+    background-color: #ffffff;
+}
+
+.step-done .step-dot {
+    background-color: #22c55e;
+    border-color: #22c55e;
+}
+
+.step-active .step-dot {
+    background-color: #eab308;
+    border-color: #eab308;
+}
+
+.observaciones-list {
+    margin: 0.35rem 0 0.6rem 0;
+    font-size: 0.84rem;
+}
+
+.observaciones-list li {
+    margin-bottom: 0.25rem;
+}
+
+/* PANEL LATERAL DASHBOARD */
+
+.dashboard-side {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.side-card {
+    background-color: #ffffff;
+    border-radius: 1rem;
+    padding: 0.8rem 0.9rem;
+    border: 1px solid var(--border-soft);
+    box-shadow: var(--shadow-soft);
+    font-size: 0.84rem;
+    color: var(--gray-text);
+}
+
+.side-title {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 0.3rem;
+}
+
+.side-status-label {
+    font-size: 0.8rem;
+    color: var(--gray-light);
+}
+
+.side-progress {
+    margin: 0.4rem 0 0.15rem 0;
+    width: 100%;
+    height: 7px;
+    border-radius: 999px;
+    background-color: #e5e7eb;
+}
+
+.side-progress-fill {
+    width: 45%;
+    height: 100%;
+    border-radius: inherit;
+    background: linear-gradient(90deg, #2563eb, #22c55e);
+}
+
+.side-progress-text {
+    font-size: 0.8rem;
+    color: var(--gray-text);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 960px) {
+    .dashboard-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-main {
+        order: -1;
+    }
+
+    .dashboard-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 720px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}

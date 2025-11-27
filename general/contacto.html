@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto | INSTALLMELSI S.A.S.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/contacto.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header class="header">
+        <div class="logo">
+            <img src="assets/img/logo-installmelsi_transparent.png" alt="Logo INSTALLMELSI S.A.S.">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html" class="nav-link">Inicio</a></li>
+                <li><a href="cliente-subir-plano.html" class="nav-link">Soy propietario</a></li>
+                <li><a href="planes-profesionales.html" class="nav-link">Soy profesional</a></li>
+                <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page-main">
+        <section class="page-header-block">
+            <h1 class="page-title">Contacto</h1>
+            <p class="page-subtitle">
+                Esta página funciona como pantalla de referencia para el prototipo.
+                Puedes usarla para simular el formulario de contacto del servicio.
+            </p>
+        </section>
+
+        <section class="contact-layout">
+            <div class="contact-form card">
+                <h2 class="section-title">Escríbenos</h2>
+                <form class="form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input id="nombre" type="text" placeholder="Tu nombre completo">
+                    </div>
+                    <div class="form-group">
+                        <label for="tipoUsuario">Soy</label>
+                        <select id="tipoUsuario">
+                            <option>Propietario</option>
+                            <option>Profesional eléctrico</option>
+                            <option>Empresa constructora</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="correoContacto">Correo electrónico</label>
+                        <input id="correoContacto" type="email" placeholder="ejemplo@correo.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" rows="4" placeholder="Cuéntanos brevemente qué necesitas o qué te gustaría preguntar."></textarea>
+                    </div>
+
+                    <div class="form-actions">
+                        <button class="btn btn-primary" type="button">
+                            Simular envío de mensaje
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <aside class="contact-info card">
+                <h3 class="info-title">Información para la profesora</h3>
+                <p>
+                    Esta sección sirve para explicar que el prototipo contempla un canal de contacto
+                    para propietarios y profesionales interesados en el servicio.
+                </p>
+                <p class="info-highlight">
+                    No hay funcionalidad real de envío de correo, pero la pantalla
+                    ayuda a visualizar cómo se vería el formulario.
+                </p>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 INSTALLMELSI S.A.S. · Prototipo académico</p>
+    </footer>
+
+</div>
+
+</body>
+</html>
