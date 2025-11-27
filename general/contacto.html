@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Contacto | INSTALLMELSI S.A.S.</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/contacto.css">
+    <link rel="stylesheet" href="/assets/css/base.css">
+    <link rel="stylesheet" href="/assets/css/contacto.css">
 </head>
 <body>
 
@@ -13,76 +13,118 @@
 
     <header class="header">
         <div class="logo">
-            <img src="assets/img/logo-installmelsi_transparent.png" alt="Logo INSTALLMELSI S.A.S.">
+            <img src="/assets/img/logo-installmelsi_transparent.png" alt="Logo INSTALLMELSI S.A.S.">
         </div>
         <nav class="nav">
             <ul>
-                <li><a href="index.html" class="nav-link">Inicio</a></li>
-                <li><a href="cliente-subir-plano.html" class="nav-link">Soy propietario</a></li>
-                <li><a href="planes-profesionales.html" class="nav-link">Soy profesional</a></li>
-                <li><a href="contacto.html" class="nav-link active">Contacto</a></li>
+                <li><a href="/index.html" class="nav-link">Inicio</a></li>
+                <li><a href="/propietario/cliente-subir-plano.html" class="nav-link active">Soy propietario</a></li>
+                <li><a href="/general/planes-profesionales.html" class="nav-link">Soy profesional</a></li>
+                <li><a href="/general/contacto.html" class="nav-link">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="page-main">
         <section class="page-header-block">
-            <h1 class="page-title">Contacto</h1>
+            <h1 class="page-title">Conversemos sobre tu proyecto eléctrico</h1>
             <p class="page-subtitle">
-                Esta página funciona como pantalla de referencia para el prototipo.
-                Puedes usarla para simular el formulario de contacto del servicio.
+                Cuéntanos si eres propietario, profesional o empresa. Nuestro equipo técnico puede ayudarte
+                a planificar, verificar y documentar tu instalación eléctrica con el respaldo de INSTALLMELSI S.A.S.
             </p>
         </section>
 
         <section class="contact-layout">
+            <!-- Formulario -->
             <div class="contact-form card">
-                <h2 class="section-title">Escríbenos</h2>
+                <h2 class="section-title">Envíanos un mensaje</h2>
                 <form class="form">
                     <div class="form-group">
-                        <label for="nombre">Nombre</label>
-                        <input id="nombre" type="text" placeholder="Tu nombre completo">
+                        <label for="nombre">Nombre completo</label>
+                        <input id="nombre" type="text" placeholder="Ej. Juan López">
                     </div>
+
                     <div class="form-group">
                         <label for="tipoUsuario">Soy</label>
                         <select id="tipoUsuario">
-                            <option>Propietario</option>
-                            <option>Profesional eléctrico</option>
+                            <option>Propietario de vivienda</option>
+                            <option>Profesional eléctrico / instalador</option>
                             <option>Empresa constructora</option>
+                            <option>Otro</option>
                         </select>
                     </div>
+
                     <div class="form-group">
                         <label for="correoContacto">Correo electrónico</label>
                         <input id="correoContacto" type="email" placeholder="ejemplo@correo.com">
                     </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono (opcional)</label>
+                        <input id="telefono" type="tel" placeholder="+593 ...">
+                    </div>
+
                     <div class="form-group">
                         <label for="mensaje">Mensaje</label>
-                        <textarea id="mensaje" rows="4" placeholder="Cuéntanos brevemente qué necesitas o qué te gustaría preguntar."></textarea>
+                        <textarea id="mensaje" rows="4" placeholder="Cuéntanos brevemente tu proyecto o la consulta que tienes."></textarea>
                     </div>
 
                     <div class="form-actions">
                         <button class="btn btn-primary" type="button">
-                            Simular envío de mensaje
+                            Enviar mensaje
                         </button>
+                        <span class="form-note">
+                            En una versión productiva, recibirías una respuesta en tu correo registrado.
+                        </span>
                     </div>
                 </form>
             </div>
 
+            <!-- Info lateral -->
             <aside class="contact-info card">
-                <h3 class="info-title">Información para la profesora</h3>
-                <p>
-                    Esta sección sirve para explicar que el prototipo contempla un canal de contacto
-                    para propietarios y profesionales interesados en el servicio.
-                </p>
-                <p class="info-highlight">
-                    No hay funcionalidad real de envío de correo, pero la pantalla
-                    ayuda a visualizar cómo se vería el formulario.
-                </p>
+                <h3 class="info-title">Información de contacto</h3>
+
+                <div class="contact-block">
+                    <h4>Atención a propietarios</h4>
+                    <p>
+                        Si estás construyendo o remodelando tu vivienda, podemos ayudarte a revisar tu plano,
+                        validar materiales y acompañar el proceso de instalación.
+                    </p>
+                    <p class="contact-pill">Asesoría técnica neutral</p>
+                </div>
+
+                <div class="contact-block">
+                    <h4>Profesionales y empresas</h4>
+                    <p>
+                        ¿Quieres diferenciar tu trabajo con documentación y certificados?
+                        INSTALLMELSI puede convertirse en tu aliado para proyectos eléctricos más seguros.
+                    </p>
+                    <p class="contact-pill contact-pill-alt">Proyectos + checklist + certificados</p>
+                </div>
+
+                <div class="contact-block contact-block-light">
+                    <h4>Datos de referencia</h4>
+                    <p>
+                        Correo: <strong>contacto@installmelsi.com</strong><br>
+                        Horario de atención: <strong>Lunes a viernes, 09h00 a 18h00</strong><br>
+                        Instagram:
+                        <strong>
+                            <a href="https://www.instagram.com/installmelsi_sas/" target="_blank" rel="noopener noreferrer">
+                                @installmelsi_sas
+                            </a>
+                        </strong>
+                    </p>
+                    <p class="info-highlight">
+                        También podemos agendar una videollamada para revisar tu proyecto eléctrico
+                        y explicarte cómo funcionaría el acompañamiento de INSTALLMELSI.
+                    </p>
+                </div>
             </aside>
         </section>
     </main>
 
     <footer class="footer">
-        <p>© 2025 INSTALLMELSI S.A.S. · Prototipo académico</p>
+        <p>© 2025 INSTALLMELSI S.A.S. · Todos los derechos reservados</p>
     </footer>
 
 </div>

@@ -1,42 +1,178 @@
 /* =========================
-   PÁGINA DE CONTACTO
+   PÁGINA DE CONTACTO (PÚBLICO)
    ========================= */
 
 .page-main {
-    padding: 1.5rem 0 2.5rem 0;
+    padding: 1.8rem 0 2.8rem 0;
 }
+
+/* LAYOUT GENERAL */
 
 .contact-layout {
     display: grid;
-    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1.1fr);
-    gap: 1.4rem;
+    grid-template-columns: minmax(0, 1.6fr) minmax(0, 1.2fr);
+    gap: 1.6rem;
     align-items: flex-start;
 }
 
-/* Reutilizamos .card, .form, .form-group de base/cliente */
+/* TARJETAS (apoyándonos en .card de base.css) */
+
+.card {
+    border-radius: 1.3rem;
+    box-shadow: 0 14px 32px rgba(15, 23, 42, 0.08);
+}
+
+/* FORMULARIO */
 
 .contact-form {
     font-size: 0.9rem;
+    color: var(--gray-text);
 }
 
-.contact-info {
+.section-title {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 0.9rem;
+}
+
+/* Form y campos (copiado del estilo de cliente, para que se vea igual de pro) */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
     font-size: 0.88rem;
     color: var(--gray-text);
 }
 
-.info-title {
-    font-size: 0.95rem;
-    font-weight: 600;
-    color: var(--navy);
-    margin-bottom: 0.3rem;
+.form-group label {
+    font-weight: 500;
 }
 
-.info-highlight {
-    margin-top: 0.6rem;
-    padding: 0.5rem 0.6rem;
+.form-group input,
+.form-group select,
+.form-group textarea {
     border-radius: 0.7rem;
+    border: 1px solid var(--border-soft);
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+    outline: none;
+    background-color: #ffffff;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: rgba(37, 99, 235, 0.55);
+    box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.2);
+    background-color: #f9fafb;
+}
+
+.form-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    margin-top: 0.6rem;
+}
+
+.form-note {
+    font-size: 0.8rem;
+    color: var(--gray-light);
+}
+
+/* PANEL LATERAL DE INFO */
+
+.contact-info {
+    font-size: 0.88rem;
+    color: var(--gray-text);
+    background: radial-gradient(circle at top left, rgba(191, 219, 254, 0.6), transparent 55%),
+                #ffffff;
+    border-radius: 1.4rem;
+    border: 1px solid rgba(191, 219, 254, 0.9);
+}
+
+.info-title {
+    font-size: 0.98rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 0.5rem;
+}
+
+.contact-block {
+    margin-bottom: 0.9rem;
+}
+
+.contact-block h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--navy);
+    margin-bottom: 0.25rem;
+}
+
+/* Bloque inferior separado visualmente */
+
+.contact-block-light {
+    margin-top: 0.6rem;
+    padding-top: 0.6rem;
+    border-top: 1px solid var(--border-soft);
+}
+
+/* PILLS / CHIPS */
+
+.contact-pill {
+    display: inline-block;
+    margin-top: 0.3rem;
+    font-size: 0.78rem;
+    padding: 0.16rem 0.65rem;
+    border-radius: 999px;
     background-color: var(--blue-soft-alt);
-    border: 1px dashed rgba(37, 99, 235, 0.45);
+    color: var(--blue-dark);
+    border: 1px solid rgba(37, 99, 235, 0.35);
+}
+
+.contact-pill-alt {
+    background-color: var(--yellow-soft);
+    color: #92400e;
+    border-color: rgba(245, 158, 11, 0.55);
+}
+
+/* CUADRO RESALTADO */
+
+.info-highlight {
+    margin-top: 0.55rem;
+    padding: 0.55rem 0.7rem;
+    border-radius: 0.8rem;
+    background-color: #f9fafb;
+    border: 1px dashed rgba(148, 163, 184, 0.8);
+    font-size: 0.83rem;
+}
+
+/* ENLACE INSTAGRAM */
+
+.contact-block a {
+    text-decoration: none;
+    color: var(--blue-dark);
+    border-bottom: 1px dashed transparent;
+    transition:
+        color 0.2s ease,
+        border-color 0.2s ease;
+    font-weight: 500;
+}
+
+.contact-block a:hover {
+    color: #1e40af;
+    border-color: rgba(37, 99, 235, 0.6);
 }
 
 /* RESPONSIVE */
@@ -44,5 +180,16 @@
 @media (max-width: 900px) {
     .contact-layout {
         grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        order: -1;
+    }
+}
+
+@media (max-width: 720px) {
+    .card {
+        border-radius: 1.1rem;
+        padding-inline: 1rem;
     }
 }
